@@ -2,7 +2,7 @@
 
 # 127 ngStyle directiva
 
-	    <p [style.fontSize.px]="tamano">
+    <p [style.fontSize.px]="tamano">
       Hola mundo esta es una etiqueta
     </p>
 
