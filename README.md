@@ -1,6 +1,4 @@
 # miscelanea
-* directivas ngStyle, ngClass y personalizadas  * Ciclo de vida de los componentes
-
 
 # 127 ngStyle directiva
 
