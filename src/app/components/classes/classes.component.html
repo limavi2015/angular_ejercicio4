@@ -1,0 +1,23 @@
+<div [ngClass]="alerta" class="alert" role="alert">
+  <strong>Well done 2</strong>
+</div>
+<button type="button" class="bnt btn-info" (click)="alerta='alert-info'">Info</button>
+<button type="button" class="bnt btn-success" (click)="alerta='alert-success'">Success</button>
+<button type="button" class="bnt btn-danger" (click)="alerta='alert-danger'">Danger</button>
+<br><br>
+
+
+<h6 [ngClass]="{ 'text-danger': propiedades.danger, 'text-info': !propiedades.danger }">
+  Parrafo 3 (toma el estilo de classes.component.ts)
+</h6>
+<button type="button" class="bnt btn-info" (click)="propiedades.danger=!propiedades.danger">Change Parrafo 3</button>
+<br><br>
+
+
+<h5>Proceso Asíncrono</h5>
+<button type="button" class="bnt btn-info" (click)="ejecutar()">
+  <i [ngClass]="{'fa-save':!loading, 'fa-refresh fa-spin':loading}"class="fa fa-save"></i>
+  <span *ngIf="!loading">Guardar Cambios</span>
+  <span *ngIf="loading">Espere por favor</span>
+</button>
+<br>
